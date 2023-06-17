@@ -1,0 +1,12 @@
+<div class="alert">
+    <slot />
+</div>
+
+<script>
+    const alertElements : NodeListOf<HTMLElement> = document.querySelectorAll('.alert');
+    alertElements.forEach((element) => {
+        element.addEventListener('mousedown', () => {
+            alert('Hello from the other side!')
+        });
+    });
+</script>

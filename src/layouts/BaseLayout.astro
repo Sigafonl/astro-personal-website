@@ -1,0 +1,33 @@
+---
+import HelloAlert from "../components/HelloAlert.astro"
+const {title} = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/experience/">My Experience</a>
+            <a href="/portfolio/">Portfolio</a>
+            <a href="/contact/">Contact Me</a>
+        </nav>
+        
+        <HelloAlert>
+            <h1>{title}</h1>
+        </HelloAlert>
+
+        <slot/>
+
+        <footer>
+            <a href="https://github.com">GitHub</a>
+            <a href="https://linkedIn.com">LinkedIn</a>
+            <a href="https://soundcloud.com/">SoundCloud</a>
+        </footer>
+	</body>
+</html>
