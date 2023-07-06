@@ -1,7 +1,7 @@
 html {
-    background-color: #2f2548;
+    background-color: #e7e3f1;
     font-family: sans-serif;
-    color: azure;
+    color: rgb(96, 43, 11);
 }
   
 body {
@@ -32,7 +32,7 @@ h1 {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: rgb(96, 43, 11);;
 }
   
 .nav-links {
@@ -51,13 +51,12 @@ h1 {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: rgb(96, 43, 11);;
 }
 
 .nav-links a:hover, a:focus {
-    background-color: #ff9776;
     color: #4c1d95;
-  }
+}
   
 .expanded {
 display: unset;

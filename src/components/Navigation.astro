@@ -1,9 +1,51 @@
 ---
-
+import icon from "../assets/profile_icon.png"
 ---
 
-<nav class="nav-links">
-    <a href="/">Home</a>
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/contact/">Contact Me</a>
-</nav>
+<div class="header">
+    <img class="profile_icon" src={icon} alt="Drawn profile picture">
+    <h1 class="myName"> Noel Sigafoos </h1>
+
+    <nav class="nav-links">
+        <a href="/">Home</a>
+        <p class="seperator">|</p>
+        <a href="/portfolio/">Portfolio</a>
+        <p class="seperator">|</p>
+        <a href="/contact/">Contact Me</a>
+    </nav>
+</div>
+
+<style>
+    .header {
+        position: static;
+        display: grid;
+        height: auto;
+        width: 100%;
+        min-height: auto;
+        grid-template-rows: repeat(2, min-content) 1fr;
+        grid-template-columns: 100%;
+    }
+
+    .profile_icon {
+        width: 150px;
+        height: 150px;
+        overflow: clip;
+        background: transparent;
+        object-fit: cover;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    .myName{
+        vertical-align: baseline;
+    }
+
+    .nav-links{
+        visibility: inherit;
+        overflow-x: visible;
+    }
+
+
+</style>
+
+
