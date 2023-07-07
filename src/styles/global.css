@@ -1,7 +1,7 @@
 html {
-    background-color: #e7e3f1;
+    background-color: #1B2537;
     font-family: sans-serif;
-    color: rgb(96, 43, 11);
+    color: rgb(255, 255, 255);
 }
   
 body {
@@ -21,60 +21,16 @@ h1 {
     font-size: 2.5rem;
 }
 
-/* Navigation styles*/
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-}
-  
-.hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: rgb(96, 43, 11);;
-}
-  
-.nav-links {
-    width: 100%;
-    top: 5rem;
-    background-color: #ff9776;
-    display: none;
-    margin: 0;
-  }
-
-.nav-links a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(96, 43, 11);;
-}
-
-.nav-links a:hover, a:focus {
-    color: #4c1d95;
-}
-  
-.expanded {
-display: unset;
-}
 
 @media screen and (min-width: 636px) {
-    .nav-links {
+    /* .nav-links {
         display: flex;
         justify-content: center;
         position: static;
         width: auto;
         background: none;
-    }
-  
-    .nav-links a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
+    } */
+
   
     .hamburger {
         display: none;
