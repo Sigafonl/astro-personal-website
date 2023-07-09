@@ -5,11 +5,10 @@ html {
 }
   
 body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
+    margin: 0 auto !important;
+    line-height: inherit;
+    justify-items: center;
+    max-width: fit-content;
 }
 
 * {

@@ -1,0 +1,43 @@
+---
+import bg from "../assets/bg.png";
+import bg_stars from "../assets/bg_stars.png"
+import stars from "../assets/stars.png"
+import stars2 from "../assets/stars2.png"
+import back from "../assets/back.png";
+import front_btm from "../assets/front_btm.png";
+import front_top from "../assets/front_top.png";
+import mid_btm from "../assets/mid_btm.png";
+import mid_top from "../assets/mid_top.png";
+---
+
+<div class="w-80 h-80" data-relative-input="true" data-scalar-x="5" data-scalar-y="5" id="scene">
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={bg} data-depth="0.1"/>
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={bg_stars} data-depth="0.3"/>
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={back} data-depth="0.4"/>
+
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={stars} data-depth="0.6"/>
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={stars2} data-depth="0.5"/>
+
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={mid_btm} data-depth="0.5"/>
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={mid_top} data-depth="0.5"/>
+
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={front_btm} data-depth="0.7"/>
+    <img class="h-[120%] max-w-[300%] drop-shadow-3xl object-cover" src={front_top} data-depth="0.7"/>
+</div>
+
+<script>
+    import Parallax from 'parallax-js'
+
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+</script>
+
+<style>
+    img{
+        filter: drop-shadow(10px -15px 5px #000000);
+    }
+
+    #scene{
+        clip-path: circle(45%);
+    }
+</style>
