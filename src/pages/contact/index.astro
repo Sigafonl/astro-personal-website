@@ -1,0 +1,16 @@
+---
+import BaseDescription from "../../components/BaseDescription.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro"
+
+const { frontmatter } = Astro.props
+
+let aboutMe= "Just a little guy"
+let contact= "fsigafoos@gmail.com"
+---
+
+<BaseLayout>
+    <div class="contact-container p-3">
+        <BaseDescription title="About" description={aboutMe}/>
+        <BaseDescription title="Contact" description={contact}/>
+    </div>
+</BaseLayout>

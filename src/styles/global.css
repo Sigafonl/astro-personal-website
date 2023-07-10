@@ -16,21 +16,19 @@ body {
 }
 
 h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
+    margin: 0 auto;
 }
 
 
 @media screen and (min-width: 636px) {
-    /* .nav-links {
+    .nav-links {
         display: flex;
         justify-content: center;
         position: static;
         width: auto;
         background: none;
-    } */
+    }
 
-  
     .hamburger {
         display: none;
     }
