@@ -1,5 +1,6 @@
 html {
-    background-color: #1B2537;
+    background: linear-gradient(160deg, #5989de, #fda4e4 100%);
+    background-size: cover;
     font-family: sans-serif;
     color: rgb(255, 255, 255);
 }

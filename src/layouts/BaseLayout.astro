@@ -9,9 +9,17 @@ const {title: pageTitle} = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+
+    <style>
+      body {
+          font-family: 'Lato';
+          padding: 50px;
+      }
+    </style>
 	</head>
 	<body>
         
