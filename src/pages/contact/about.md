@@ -1,6 +1,8 @@
 ---
 title: "About"
-layout: "../../layouts/BaseLayout.astro"
+layout: "../../layouts/ProjectLayout.astro"
 ---
+
+# About
 
 Just a little guy making little programs
